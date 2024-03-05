@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equive="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="./assets/alura-icon.png" alt="icone alura">
+    </header>
+    <main class="container">
+        <section class="container__conteudo">
+            <textarea class="container__conteudo__textarea" cols="40" rows="10" placeholder="Digite seu texto"
+                style="resize: none;"></textarea>
+            <div class="container__conteudo__funcoes">
+                <div class="container__conteudo__funcoes__alerta">
+                    <img src="./assets/Vector.png" alt="alerta">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="container__conteudo__funcoes__botoes">
+                    <button class="container__conteudo__funcoes__botoes__cripto" onclick="btnCripto()" id="actionCripto">Criptografar</button>
+                    <button class="container__conteudo__funcoes__botoes__descripto" onclick="btnDescriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="container__info">
+            <div class="container__info__mensagem">
+                <img src="./assets/boneco.png" alt="nenhuma-mensagem" class="container__info__img">
+                <h3 class="container__info__t1">Nenhuma mensagem encontrada</h3>
+                <p class="container__info__t2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="container__info__cripto d-none">
+                <p></p>
+                <button class="container__info__cripto__botao" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">Desenvolvido por Jônathas Felipe</footer>
+    <script src="/js/cripto_and_descripto.js"></script>
+</body>
+
+</html>
