@@ -17,7 +17,7 @@ header{
 }
 
 .container {
-    width: 1440px;
+    width: auto;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -172,6 +172,7 @@ header{
 }
 
 .rodape {
+    width: 100%;
     padding: 20px;
     background-color: hsl(213, 84%, 24%);
     color: #FFFFFF;
